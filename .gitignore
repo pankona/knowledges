@@ -1,0 +1,71 @@
+# データベースファイル
+*.db
+*.sqlite
+*.sqlite3
+knowledge.db
+
+# ビルド成果物
+/bin/
+dist/
+build/
+
+# Go関連
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Go workspace file
+go.work
+
+# 依存関係管理（通常go.modとgo.sumはコミットする）
+# vendor/
+
+# IDE/エディタ関連
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ログファイル
+*.log
+
+# 一時ファイル
+*.tmp
+*.temp
+
+# 設定ファイル（機密情報を含む可能性がある）
+config.local.yaml
+config.prod.yaml
+.env
+.env.local
+
+# テスト関連一時ファイル
+test*.db
+coverage.html
+coverage.out
+
+# 実行時生成ファイル
+*.pid

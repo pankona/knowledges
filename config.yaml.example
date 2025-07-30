@@ -1,0 +1,28 @@
+github:
+  repositories:
+    - golang/go
+    - kubernetes/kubernetes
+
+llm:
+  primary: claude
+  parallel: 3
+  retry:
+    max_attempts: 3
+    initial_delay: 1s
+    max_delay: 10s
+  drivers:
+    claude:
+      command: claude
+      args: [-p]
+
+database:
+  path: ./knowledge.db
+
+collection:
+  batch_size: 5
+  max_prs_per_run: 100
+
+server:
+  port: 8080
+  read_timeout: 30
+  write_timeout: 30
